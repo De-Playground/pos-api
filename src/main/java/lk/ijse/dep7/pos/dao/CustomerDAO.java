@@ -1,19 +1,44 @@
 package lk.ijse.dep7.pos.dao;
 
-import lk.ijse.dep7.pos.dto.CustomerDTO;
 import lk.ijse.dep7.pos.entity.Customer;
-import lk.ijse.dep7.pos.exception.FailedOperationException;
 
-import java.sql.*;
-import java.util.ArrayList;
+import java.sql.Connection;
 import java.util.List;
 
 public class CustomerDAO {
 
-    private Connection connection;
+    private final Connection connection;
 
-    public CustomerDAO(Connection connection){
+    public CustomerDAO(Connection connection) {
         this.connection = connection;
+    }
+
+    public void saveCustomer(Customer customer) {
+
+    }
+
+    public void updateCustomer(Customer customer) {
+
+    }
+
+    public void deleteCustomerById(String customerId) {
+
+    }
+
+    public Customer findCustomerById(String customerId) {
+        return null;
+    }
+
+    public List<Customer> findAllCustomers() {
+        return null;
+    }
+
+    public long countCustomers() {
+        return 0;
+    }
+
+    public boolean existsCustomerById(String customerId) {
+        return false;
     }
 
 //    public void saveCustomer(CustomerDTO customer) {
@@ -133,33 +158,5 @@ public class CustomerDAO {
 //            throw new RuntimeException("Failed operation");
 //        }
 //    }
-
-    public void saveCustomer(Customer customer){
-
-    }
-
-    public void updateCustomer(Customer customer){
-
-    }
-
-    public void deleteCustomerById(String customerId){
-
-    }
-
-    public Customer findCustomerById(String customerId){
-        return null;
-    }
-
-    public List<Customer> findAllCustomers(){
-        return null;
-    }
-
-    public long countCustomers(){
-        return 0;
-    }
-
-    public boolean existsCustomerById(String customerId){
-        return false;
-    }
 
 }
