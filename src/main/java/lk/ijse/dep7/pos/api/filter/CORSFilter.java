@@ -1,8 +1,6 @@
-<<<<<<< HEAD:src/main/java/lk/ijse/dep7/pos/api/api/filter/CORSFilter.java
-package lk.ijse.dep7.pos.pos.api.filter;
-=======
+
 package lk.ijse.dep7.pos.api.filter;
->>>>>>> 185a64c963233ba22a727108aa356b4295409eda:src/main/java/lk/ijse/dep7/pos/api/filter/CORSFilter.java
+
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
